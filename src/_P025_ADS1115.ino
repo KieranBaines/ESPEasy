@@ -181,7 +181,7 @@ boolean Plugin_025(byte function, struct EventStruct *event, String& string)
 
         String log = F("ADS1115 : Analog value: ");
 
-        delay(9);
+        delay(8);
         int16_t value = readRegister025((address), (0x00));
         UserVar[event->BaseVarIndex] = (float)value;
         log += value;
